@@ -12,12 +12,12 @@
         document.getElementById("App_Admin").textContent = user.AppAdmin; //AppAdmin: row[13]
         } else {
             // Redirect back to login if session data is missing
-            window.location.href = 'login.html';
+            window.location.href = 'Login.html';
         }
         // Logout function
 function logout() {
     localStorage.removeItem("user");
-    window.location.href = "login.html";
+    window.location.href = "Login.html";
 }
 
 
