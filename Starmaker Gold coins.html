@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BD. CAPTAIN KBZ gold coin agency</title>
+    <link rel="stylesheet" type="text/css" href="All css/Starmaker Gold coins.css"/>
+</head>
+  <body>
+    
+    
+    
+    <br><br>
+    <!.. Agency Notice ..>
+            
+       <div class="note">
+         <img id="catalog" src="All pic/sms.png">
+         <p>Here you can Recharge StarMaker Coin in Bangladesh through bKash, Nagad, Rocket by your StarMaker SID. Delivery Time 2-10 Min</p>
+       </div><br>
+       
+       <h1 class="item-header" style=" ">StarMaker Gold Coin</h1>
+       <hr style="height:5px; margin-left: 5px; background-color:red"/>
+            <!.. Catalog Items ..>
+          <div class="for-amount">
+            <img id="coins" src="All pic/sm-coins.png">
+          </div>
+          
+          <div class="Payment">
+            <b id="nu">𝟎𝟏𝟑𝟐𝟐𝟎𝟏𝟐𝟑𝟓𝟕</b>
+            <b id="se">send mony only.</b><br><br>
+            Select Payment Mathod.<br><br>
+            <input onclick="Bkash()" id="Bkash" type="button"  value="Bkash">
+            <input onclick="Rocket()" id="Rocket" type="button"  value="Rocket">
+            <input onclick="Nagad()" id="Nagad" type="button"  value="Nagad">
+          </div>
+          <br><br><br><br><br><br>
+       <form onsubmit="handleSubmit(event)" class="registeration-form" id="form">
+       <input type="button" class="input" value="StarMaker Gold Coin" style="font-weight:1000; background:#fff; font-size:25px; text-shadow:2px 1px 3px blue;">
+       <input type="text" name="app_name" id="app_name" class="input" value="StarMaker Gold Coin" style="display:none;">
+       <input type="text" name="user_name" id="userName" class="input" style="text-align: center; font-weight:1000; font-size:20px; text-shadow:2px 1px 3px blue;">
+       <input type="text" name="user_id" id="userId" class="input" style="display:none;">
+      <input type="text" name="user_pmnt_mtd" id="user_Mathod" class="input" value="Select Payment Mathod." style="color:red; text-align: center; font-weight:1000; font-size:20px; text-shadow:2px 1px 3px blue;" required>
+      2. Enter Payment Number.
+      <input type="text" name="user_number" id="user_pmnt_number" class="input" placeholder="+880" value="+880" required>
+      3. Enter Payed Amount.
+      <input type="number" name="user_payed_amount" id="user_pd_amount" class="input" placeholder="Enter Payed Amount." required>
+      4. Enter StarMaker SID Code.
+      <input type="number" name="user_sid_code" id="user_sm_id" class="input" placeholder="Enter StarMaker SID Code." required>
+      <input type="text" name="status"value="new shopping." style="display:none;">
+      </br></br>
+      <button type="submit">Buye now</button>
+    </form>
+    
+    <!.. Top Name ..>
+    <div class="Agency">KBZ. AGENCY BD.</div>
+    <br><br><br>
+    <div for hide social contuct>
+        <h2 class="item-header"> Stay With Us</h2>
+       <hr style="height:5px; margin-left: 5px; background-color:red"/>
+    <div class="connection">
+      <div class="linking">
+        <a href="https://www.facebook.com/kbz.kamrul?mibextid=ZbWKwL" target="_blanck"><img src="All pic/facebook.png"><p>Facebook</p></a>
+      </div>
+       <div class="linking">
+        <a href="https://youtube.com/@kamrulofficial2003?si=Y1sK5XTTRQMm1J5R" target="_blanck"><img src="All pic/youtube.png"><p>Youtube</p></a>
+       </div>
+       <div class="linking">
+        <a href="https://t.me/BDWAV" target="_blanck"><img src="All pic/telegram.png"><p>Telegram</p></a>
+       </div></div>
+    </div>
+    
+    <br><br><br><br><br>
+  
+      <div class="inv" style="display:none;"><header>Notice</header>
+        <button onclick="closeMenu(this)">x</button>
+      <p class="invoice">
+      প্রিয় ইউজার, আমাদের এজেন্সিতে নতুন মেম্বার যোগ করার মাধ্যমে আপনি টাকা ইনকাম করতে পারেন।
+      ১ জন  ভেরিফাইড মেম্বার এর জন্য আপনি ৫০ টাকা পর্যন্ত পেতে পারেন। আপনি যত খুশী নতুন মেম্বার যোগ করতে পারবেন।
+    </p>
+    <!.. Notice Scriptin ..>
+      <script>
+    function closeMenu(e) {
+        var menuList = document.querySelector(".inv");
+        if (e.innerHTML == "x") {
+            menuList.style.display = "none";
+        }}
+            </script>
+    </div><br>
+    
+     <div for user data.class="dataDiv" style="display: none; margin-left: 70px;">
+         1. email.
+         <input id="email" type="email" ><br>
+         2. password.
+          <input id="password" type="email" ><br>
+          3. user id.
+         <input id="userId" type="number" >
+       </div>
+    
+    
+    
+    <!.....  Menu   button....>
+    <div class="menu1" style="display:none;">
+      <button  onclick="openSuport(this)"  id="btn1"class="menubtn" >Agency</button>
+      <button onclick="openMenu(this)"  id="btn2"class="menubtn">Home</button>
+      <button onclick="openMe(this)"  id="btn3"class="menubtn">Me</button>
+    </div>
+    
+    
+    
+    
+    <! ..scripting code here....>
+    
+   <script>
+     function Bkash(){
+       const menu = document.getElementById('form');
+       const Bkash = document.getElementById("Bkash").value;
+       
+       document.getElementById("user_Mathod").value = Bkash;
+       menu.style.display = "block";
+     }function Rocket(){
+       const Bkash = document.getElementById("Rocket").value;
+      document.getElementById("user_Mathod").value = Bkash;
+     }function Nagad(){
+       const Bkash = document.getElementById("Nagad").value;
+      document.getElementById("user_Mathod").value = Bkash;
+     }
+     
+     
+     // JavaScript to handle the navigation
+    document.getElementById('btn1').addEventListener('click', function () {
+      // Redirect to second.html
+      window.location.href = 'Suport.html';
+    });
+    
+     // JavaScript to handle the navigation
+    document.getElementById('btn3').addEventListener('click', function () {
+      // Redirect to second.html
+      window.location.href = 'dashboard.html';
+    });
+    
+     
+    
+    const user = JSON.parse(localStorage.getItem('user'));
+        //  name: row[0], number: row[1], email: row[2], password: row[3], referaln: row[5], referalid: row[6], id: row[7], verify: row[8], blnc: row[9], profile: row[10],
+        if (user) {
+          document.getElementById("userName").value = user.name;
+         document.getElementById("userId").value = user.id;
+         document.getElementById("email").value = user.email; //name: row[0],1
+        document.getElementById("password").value = user.password; //id: row[7],7
+        document.getElementById("verify").textContent = user.verify; //verify: row[8],8
+        document.getElementById("user-balance").textContent = user.blnc; //blnc: row[9],
+        document.getElementById("User-DP").src = user.profile; //profile: row[10],
+        document.getElementById("wlcm").textContent = user.well; //well: row[11]
+        document.getElementById("App_SubAdmin").textContent = user.AppSubAdmin; //AppSubAdmin: row[12]
+        document.getElementById("App_Admin").textContent = user.AppAdmin; //AppAdmin: row[13]
+        } else {
+            // Redirect back to login if session data is missing
+            window.location.href = 'Login.html';
+        }
+    
+    async function handleSubmit(event) {
+            event.preventDefault(); // Prevent form from reloading the page
+
+            // Collect form data
+            const form = event.target;
+            const formData = new FormData(form);
+
+            // Google Apps Script Web App URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbywG56sZF7qLRtcxbrCxt6b7Jjr0UoxtasuU7MbJxWX5uecrpmNBbP20KZ1biVcoNOyTQ/exec';
+
+            // Send the form data to Google Sheets
+            try {
+                const response = await fetch(scriptURL, { method: 'POST', body: formData });
+                if (response.ok) {
+                    // Redirect to another page
+                    window.location.href = 'User-flatform.html'// Change to your success page URL
+                } else {
+                    alert('Error submitting form. Please try again.');
+                }
+            } catch (error) {
+                alert('Your Internet Is Disconneted: ' + error.message);
+            }
+        }
+    
+    
+</script>
+  </body>
+</html>
