@@ -1,0 +1,70 @@
+  a {
+    text-decoration: none;
+  }
+.registeration-form {
+    width: 300px;
+    padding: 30px;
+    margin: 10% auto;
+    color: #0f0;
+    background: linear-gradient(90deg, blue, indigo, #90f, indigo, green);
+    border-radius: 8px;
+}
+
+.registeration-form h1,
+p {
+    text-align: center;
+    margin: 5px 0;
+    color: #0f0;
+}
+
+.registeration-form p:nth-child(2) {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.registeration-form .flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.registeration-form .flex input[type=text] {
+    width: 110px;
+    border: none;
+    outline: none;
+    height: 38px;
+    padding-left: 10px;
+}
+#input{
+  border-radius: 5px;
+  color: indigo;
+}
+
+.registeration-form input#input {
+    width: 100%;
+    height: 38px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+}
+
+.registeration-form button {
+    width: px;
+    height: cm;
+    font-size: 0.7cm;
+    font-weight: 700;
+    outline: none;
+    background: #fff;
+    color: blue;
+    cursor: pointer;
+    border: 2px solid #0f0;
+    border-radius: 11px;
+    padding: 5px 10px;
+}
+.registeration-form button:hover {
+  background: green;
+  color: red;
+}

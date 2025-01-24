@@ -1,0 +1,243 @@
+{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Sans-Serif;
+}
+
+/* Body styleing */
+body {
+  position: center;
+  margin-top: 0;
+  margin-left: 0;
+  background-image: url('bg.jpg')
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.Agency {
+   position: fixed;
+   margin-top: -408%;
+   margin-left: 0;
+   padding-top: 10px;
+   border-bottom: 5px solid red;
+   padding-left: 42px;
+   padding-right: 41px;
+   text-align:center;
+   font-weight:1000; 
+   text-shadow:2px 1px 3px blue;
+   background: #b7f400;
+   font-size:1cm;
+}
+
+.inv {display: non;
+  position: fixed;
+  background-color: indigo;
+  padding: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -170%;
+  border-radius: 10px;
+  opacity: 95%;
+  header {
+    margin-left: 5%;
+    font-size: 25px;
+    font-weight: 1000;
+    color: #0f0;
+  }
+  button {
+    position: fixed;
+    margin-top: -9%;
+    margin-left: 79%;
+    color: red;border: none;
+    background-color: #fff;
+    font-size: 25px;
+    font-weight: 1000;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+  }
+  .invoice {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+}}
+/* note design */
+.note{
+  margin-top: 7%;
+  margin-left: 2%;
+  background: green;
+  border-radius: 10px;
+  p{
+    text-align: left;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: -8px;
+    color: #fff;
+  }img{
+    width: 100%;height: 110px;
+    border-radius: 10px;
+  }
+}
+
+.item-header{
+  position: relative;
+  justify-items: center;
+  text-align: center;
+  margin-left:
+  margin-bottom: -5px;
+}
+
+/* menu button design */
+.menu1 {
+  position: fixed;
+  bottom: -1%;
+  text-align: center;
+
+  .menubtn{
+    text-align: center;
+    font-size:20px;
+    font-weight: 1000;
+    height: 60px;
+    border-radius: 10px;
+  }
+  #btn1 {
+    margin-left: -1.5%;
+    padding-right: 50px;
+    padding-left: 21px;
+  }
+  #btn2 {
+    margin-left: -1.1%;
+    padding-right: 30px;
+    padding-left: 30px;
+    color:#0f0;
+    background: blue;
+  }
+  #btn3 {
+    margin-left: -1.1%;
+    padding-right: 41px;
+    padding-left: 60px;
+  }
+
+  .menubtn:hover {
+    color:#0f0;
+    background: blue;
+  }
+}
+
+.for-amount{
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  #coins{
+    position: relative;
+    left: 2%;
+    width: 100%;
+  }
+}
+
+.Payment{
+  width: 100%;
+  position: absolute;
+  justify-items: center;
+    text-align: center;
+  #nu{
+    font-size: 25px;
+    color: blue;
+  }#se{
+    color: red;
+  }input{
+    text-align: center;
+    color: #fff;
+    background: indigo;
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+  }input:hover{
+    background: green;
+    color: red;
+    border: 2px solid #0f0;
+  }
+}
+
+.registeration-form {
+    width: 300px;
+    padding: 30px;
+    margin: 10% auto;
+    color: #fff;
+    background: linear-gradient(90deg, blue, indigo, #90f, indigo, green);
+    border-radius: 8px;
+}
+
+
+.registeration-form .flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.registeration-form .flex input[type=text] {
+    width: 110px;
+    border: none;
+    outline: none;
+    height: 38px;
+    padding-left: 10px;
+}
+.input{
+  border-radius: 5px;
+  color: indigo;
+}
+
+.registeration-form input.input {
+    width: 100%;
+    height: 38px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    font-weight: 1000;
+    font-size: 0.4cm;
+}
+
+.registeration-form button {
+    width: px;
+    height: cm;
+    font-size: 0.7cm;
+    font-weight: 700;
+    outline: none;
+    background: #fff;
+    color: blue;
+    cursor: pointer;
+    border: 2px solid #0f0;
+    border-radius: 11px;
+    padding: 5px 10px;
+}
+.registeration-form button:hover {
+  background: green;
+  color: red;
+}
+ 
+.connection {
+  position: center;
+  display: inline-flex;
+  margin-bottom: 50px;
+  margin-left: 15%;
+  .linking{
+    text-align: center;
+    font-weight: 1000;
+    margin: 10px;
+    img{
+    width: 50px;
+    height: 50px;
+  }
+}
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
