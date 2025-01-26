@@ -7,17 +7,17 @@
         document.getElementById("verify").textContent = user.verify; //verify: row[8],8
         document.getElementById("user-balance").textContent = user.blnc; //blnc: row[9],
         document.getElementById("User-DP").src = user.profile; //profile: row[10],
-        document.getElementById("wlcm").textContent = user.well; //well: row[11]
-        document.getElementById("App_SubAdmin").textContent = user.AppSubAdmin; //AppSubAdmin: row[12]
-        document.getElementById("App_Admin").textContent = user.AppAdmin; //AppAdmin: row[13]
+        document.getElementById("email").value = user.email; //well: row[11]
+        document.getElementById("number").value = user.number; //AppSubAdmin: row[12]
+        document.getElementById("password").value = user.password; //AppAdmin: row[13]
         } else {
             // Redirect back to login if session data is missing
-            window.location.href = 'Login.html';
+            window.location.href = 'login.html';
         }
         // Logout function
 function logout() {
     localStorage.removeItem("user");
-    window.location.href = "Login.html";
+    window.location.href = "login.html";
 }
 
 
