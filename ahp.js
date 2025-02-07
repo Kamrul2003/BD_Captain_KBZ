@@ -60,7 +60,7 @@ function closeMenu(e) {
             const password = document.getElementById('password').value;
             
 
-            const response = await fetch('https://script.google.com/macros/s/AKfycbyfr5fEymzVMkTSSuIH0-QvLovI9xwcrmNLbQCZt3wm4TXPkbHNiILmYTF5AavgQc1GOQ/exec');
+            const response = await fetch('https://script.google.com/macros/s/AKfycbzGz2lrQQ1EKir6trnqsyyVPhnjhcCaIeMlOCymwIZ-IHxWXpwUgOhr2m7VMiYw2jp-_g/exec');
             const users = await response.json();
 
             const user = users.find(u => u.email === email && u.password === password);
@@ -70,8 +70,9 @@ function closeMenu(e) {
               localStorage.setItem('user', JSON.stringify(user));
 
                 // Redirect to the welcome page
-                window.location.href = 'dashboard.html'; // 'dashboard.html';
-            } else {
+                window.location.href = 'dashboard (1).html'; // 'dashboard.html';
+            }
+            else {
                alert ("Please login");
               //  alert('Invalid email or password');
             }
