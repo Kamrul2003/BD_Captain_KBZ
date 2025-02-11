@@ -70,7 +70,7 @@ function closeMenu(e) {
               localStorage.setItem('user', JSON.stringify(user));
 
                 // Redirect to the welcome page
-                window.location.href = 'dashboard (1).html'; // 'dashboard.html';
+                window.location.href = 'dashboard.html'; // 'dashboard.html';
             }
             else {
                alert ("Please login");
