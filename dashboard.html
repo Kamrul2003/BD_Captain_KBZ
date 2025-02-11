@@ -12,34 +12,36 @@
            <!.. User Pannel ..>
      <div id="user-data-container">   
         <div class="user-cover">
-          
+        
           <!.. User Data ..>
          
-          <img class="user-logo" id="User-DP" >
-          <div class="verify"><b id="verify"></b>
-          </div>
-          <img class="verify-tag" src="All pic/verify-tag.png">
-          <div class="user-name">
-             <h2><span id="userName"></span></h2>
-             <b id="use">ID: <span class="hdden" id="userId"></span></b>
+          <img class="user-logo" id="UserDP" src="All pic/sm.png">
+          <div class="verify">
           </div>
           
+          <div class="userName">
+             <h2><span id="userName"></span></h2>
+             <b id="use">ID: <span id="userId"></span></b><br>
+             <b id="verify"></b>
+          </div>
+           <img class="user-setting" id="userSetting" src="All pic/setting.png">
            <!.. User Balance & Withdrow System ..>
-          <div class="user-blnc">
-             <p class="blnc">Your Earn</p> 
-             <div class="cash"><p id="s">Show</p><p id="user-balance"></p></div> 
+          <div class="userInOut">
+              <div class="userBlnc">
+                 <p class="title">Your Balance</p> 
+                 <div class="blncDiv"><p id="userBalance">300 tk</p></div> 
+              </div>
+              <div class="userAddMony">
+                 <p class="title">Add Mony</p> 
+                 <div class="blncDiv"><p>Deposit</p></div> 
+              </div>
+              <div class="userWthdrow">
+                 <p class="title">Withdrow</p> 
+                 <div class="blncDiv"><p>Request</p></div> 
+              </div>
           </div>
-          <div class="user-cashout">
-             <p class="blnc">Request</p> 
-             <div class="cash"><p onclick="sendDataBtn()">Withdrow</p></div> 
-          </div>
-          <div class="user-addmony">
-             <p class="blnc">Add Mony</p> 
-             <div class="cash"><p>Deposit</p></div> 
-          </div>
-             
-            
         </div>
+            
            <div id="Admin_pennal">
                <a href="https://github.com/Kamrul2003/BD.-Captain-KBZ.git"></a>
                <h2 id="wlcm"></h2>
@@ -48,28 +50,98 @@
                <h1 id="App_SubAdmin"></h1>
            </div>
             <!..Setting Designing ..>
-            <div class="SettingDiv">
-              <img class="user-setting" src="All pic/setting.png">
-              <div class="menu-setting">
+            <div class="SettingDiv" style="display:noe;">
+             
                 
-                <div class="title">1. ORDER ➺ NUMBER.
-                  <input type="button" id="email" class="data">
+              <div class="menu-setting" id="menu-setting">
+                <button id="menuSettingBtn">X</button>
+                <div class="title">1. MY EMAIL ADDRESS.
+                  <input type="button" id="myEmail" class="data">
                 </div>  
-                
-                <div class="title">1. ORDER ➺ NUMBER.
-                  <input type="button" id="number" class="data">
+                <div class="title">2. MY PHONE NUMBER.
+                  <input type="button" id="myNumber" class="data">
                 </div>  
-                
-                <div class="title">1. ORDER ➺ NUMBER.
-                  <input type="button" id="password" class="data">
+                <div class="title">3. MY USER PASSWIRD.
+                  <input type="button" id="myPassword" class="data">
                 </div>  
-                
-                
                 <button onclick="logout()" id="Logout">Logout</button>
               </div>
             </div>
       </div>
-     
+      
+      <div DIV FOR HIDE MENU id="STORuser">
+      <div class="userDataStor">
+        <div class="DataDiv">
+             <p class="Name">USER NAME REFERAL ME.</p> 
+             <div class="Data"><p id="referalMeName">DataCenter</p></div> 
+          </div>
+          <div class="DataDiv">
+             <p class="Name">USER ID REFERAL ME.</p> 
+             <div class="Data"><p id="referalMeId">DataCenter</p></div> 
+          </div>
+          <div class="DataDiv" id="myrfrl">
+             <p class="Name" id="myrfrltitel">MY REFEREL USERS.</p> 
+             <div class="Data" id="myrfrldiv"><p id="myRfrl">DataCenter</p></div> 
+          </div>
+      </div>
+      <div class="userDataStor" style="margin-top: -0%;">
+        <div class="DataDiv">
+             <p class="Name">MY TOTAL EARNED AMOUNT.</p> 
+             <div class="Data"><p id="totalEarned">DataCenter</p></div> 
+          </div>
+          <div class="DataDiv">
+             <p class="Name">TOTAL WITHDRAW AMOUNT.</p> 
+             <div class="Data"><p id="totalWithdraw">DataCenter</p></div> 
+          </div>
+          <div class="DataDiv">
+             <p class="Name">NEW EARNED AMOUNT.</p> 
+             <div class="Data"><p id="newEarned">DataCenter</p></div> 
+          </div>
+      </div>
+      <div class="userDataStor" style="margin-top: -0%;">
+        <div class="DataDiv">
+             <p class="Name">LAST WITHDRAW AMOUNT.</p> 
+             <div class="Data"><p id="lastWithdraw">DataCenter</p></div> 
+          </div>
+          <div class="DataDiv">
+             <p class="Name">LAST WITHDRAW DATE.</p> 
+             <div class="Data" style="padding-left: 2px; padding-right: 2px;"><p id="lastWithdrawDate">DataCenter</p></div> 
+          </div>
+          <div class="DataDiv" id="aDforColoring">
+             <p class="Name">MY REFEREL USERS.</p> 
+             <div class="Data"><p>DataCenter</p></div> 
+          </div>
+      </div>
+      </div>
+      
+      
+      <!   USER DATA STOR CENTER >
+       <div for user data class="dataDiv" id="userDataStor" style="display: none; margin-left: 70px;;">
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+         1. MY EMAIL ADDRESS.<br>
+         <input id="email" type="text" style=" text-align: center" ><br>
+         2. MY NUMBER.<br>
+         <input id="number" type="text" style=" text-align: center" ><br>
+         3. MY PASSWORD.<br>
+         <input id="password" type="text"  style=" text-align: center"><br>
+         4. USER NAME REFERAL ME.<br>
+         <input id="referalMeName" type="text"  style=" text-align: center"><br>
+         5. USER ID REFERAL ME.<br>
+         <input id="referalMeId" type="text"  style=" text-align: center"><br>
+         6. MY REFEREL USERS.<br>
+         <input id="myRfrl" type="text" style=" text-align: center" ><br>
+         7. MY TOTAL EARNED AMOUNT.<br>
+          <input id="totalEarned" type="text" style=" text-align: center" ><br>
+         8. TOTAL WITHDRAW AMOUNT.<br>
+         <input id="totalWithdraw" type="text"  style=" text-align: center"><br>
+         9. NEW EARNED AMOUNT.<br>
+         <input id="newEarned" type="text"  style=" text-align: center"><br>
+         10. LAST WITHDRAW AMOUNT.<br>
+          <input id="lastWithdraw" type="text"  style=" text-align: center"><br>
+         11. LAST WITHDRAW DATE.<br>
+         <input id="lastWithdrawDate" type="text"  style=" text-align: center"><br>
+       </div>
+    <br><br><br>
     
      <!.....  Menu   button....>
     <div class="menu1">
