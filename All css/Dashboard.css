@@ -4,44 +4,51 @@
     margin-left: 0;
     font-family: Arial, sans-serif;
     background-color: #fff;
+    width: 100%;
+    height: 100%;
   } 
-  
-  /*button desining*/
-  .menu1 {
-    position: fixed;
-    bottom: -1%;
+ 
+/* menu button design */
+.menu1 {
+  position: fixed;
+  justify-items: center;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background: #fff;
+  border: 2px solid #0f0;
+  color: blue;
+  border-radius: 10px 10px 0px 0px;
+  margin: 0;
+  .menubtn{
+    position: relative;
     text-align: center;
-  
-    .menubtn{
-      text-align: center;
-      font-size:20px;
-      font-weight: 1000;
-      height: 60px;
-      border-radius: 10px;
-    }
-    #btn1 {
-      margin-left: -0.5%;
-      padding-right: 55px;
-      padding-left: 27px;
-    }
-    #btn2 {
-      margin-left: -1.5%;
-      padding-right: 32px;
-      padding-left: 30px;
-    }
-    #btn3 {
-      margin-left: -1.5%;
-      padding-right: 41px;
-      padding-left: 60px;
-      color:#0f0;
-      background: blue;
-    }
-  
-    .menubtn:hover {
-      color:#0f0;
-      background: blue;
-    }
+    font-size:20px;
+    font-weight: 1000;
+    height: 60px;
+    width: 33.3%;border: none;
   }
+  #btn1 {
+    border-radius: 10px 0px 0px 0px;
+    margin-right: -0.5%;
+  }
+  #btn2 {
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+  }
+  #btn3 {
+    border-radius: 0px 10px 0px 0px;
+    margin-left: -0.5%;
+    color:#0f0;
+    background: blue;
+  }
+
+  .menubtn:hover {
+    color:#0f0;
+    background: blue;
+  }
+}
+
   
   .user-logo {
   position: absolute;
@@ -64,9 +71,9 @@
    b {
      position: absolute;
      left: 32.5%;
-     top: 14%;
+     top: 17%;
      text-align: left;
-     background: #002ff473;
+     background:;
      color: #fff;
      padding-left: 5px;
      padding-right: 8px;
@@ -75,10 +82,11 @@
   }
   /* menu-setting*/
   .user-setting {
-    position: fixed;
-    right: -1.5%;
-    margin-top: -0.1%;
-    margin-right: 5px;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    margin-top: 1%;
+    margin-right: 1%;
     height: 35px;
     width: 35px;
     padding: 5px;
@@ -87,16 +95,16 @@
     border-radius: 50px;
   }
   .SettingDiv{
-      position: fixed;
+      position: absolute;
       right: 0;
-      margin-top: -52%;
+      margin-top: 150px;
       margin-right: 10px;
     .menu-setting{
-      position: absolute;
+      position: relative;
       justify-items: center;
       display: none;
       right: 0;
-      margin-top: 205px;
+      margin-top: 160px;
       margin-right: -5px;
       padding: 5px;
       font-weight: 1000;
@@ -105,6 +113,15 @@
       border-radius: 10px;
       width: 360px;
       color: #fff;
+      #menuSettingBtn{
+        position: absolute;
+        text-align: center;
+        padding: 2px 5px 2px 5px;
+        right: 0;
+        top: -75px;
+        border-radius: 40px;
+        color: red;
+      }
       .title{
         position: center;
         justify-items: center;
@@ -158,164 +175,128 @@
       }
     }
   }
-  .SettingDiv:hover {
-    .menu-setting{
-      display: inline-block;
-    }
-  }
 
   .user-cover {
-    position: center;
+    position: absolute;
+    top: 0;
     width: 102%;
-    height: 200px;
+    height: 250px;
     background-image: url('All pic/cover-pic.png');
     background-size: cover;
   }
 
-  .user-name {
+  .userName {
     position: absolute;
+    text-align: left;
     left: 25%;
-    top: 3%;
-    background: ;
+    top: 40px;
+    width: 68%;
     color: #fff;
-    #use{
-      margin-top: -15px;
+    padding: 5px;
+    border-radius: 0px 15px 0px 15px;
+    box-shadow: 0px 0px 5px 0px blue;
+    h2{
+      margin: -0px;
     }
     #userName{
-      display: block;
-      width: 240px;
+      width: 67%;
       height: 30px;
       overflow: hidden;
     }h2,b{
-      background: #002ff473;
+      background: /*#002ff473;*/;
+      font-weight: 1000;
+      text-shadow: 0px 0px 5px green;
       border-radius: 10px;
       padding-left: 5px;
       padding-right: 5px;
-    }b {
-      position: absolute;
-      margin-top: -8px;
+      padding-top: 5px;
+      padding-bottom: 10px;
     }
   }
 
 
-  .user-id {
-   position: absolute;
-    left: 25%;
-    top: 10%;
-    color: #fff;
-  }
 
-  .user-blnc {
-    position: absolute;
-    left: 5%;
-    top: 18%;
-    width: 100px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: #fff;
-    color: #fff;
-    .blnc {
-      position: relative;
-      color: black;
-      text-align: center;
-      margin-top: 5px;
-    } .cash {
-      position: relative;
+  .userInOut{
+    display: flex;
+    position: relative;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 140px;
+    width: 100%;
+    .userBlnc, .userAddMony, .userWthdrow{
+      position: center;
+      width: 70%;
+      margin: 5px;
+      padding: 0px 0px 5px 0px;
+      box-shadow: 0px 0px 5px 0px #380080;
+      border-radius: 0px 10px 0px 10px;
+      background-color: #fff;
       color: #fff;
-      background-color: darkblue;
-      align-items: center;
-      left: 10px;
-      margin-top: -10px;
-      border: 1px solid red;
-      border-radius: 10px;
-      width: 80px;
-      height: 25px;
-      #s {
+      .title {
+        position: relative;
+        color: black;
         text-align: center;
-        margin-top: 3px;
+        margin-top: 5px;
+        font-size: 15px;
       }
-      #user-balance{
-        display: none;
+      .blncDiv {
+        position: relative;
+        color: #fff;
+        background-color: darkblue;
+        align-items: center;
+        margin-top: -10px;
+        margin-left: 5%;
+        border: 1px solid red;
+        border-radius: 10px;
+        width: 90%;
+        p {
+          text-align: center;
+          margin-top: px;
+        }
       }
     }
   }
-  .user-blnc:hover {
-    .cash {
-      text-align: center;
-      #s {
-        display: none;
-      }
-      #user-balance {
-        text-align: center;
-        margin-top: 3px;
-        display: inline-block;
-      }
-    }
-  }
-
-
-  .user-addmony {
-   position: absolute;
-    left: 35%;
-    top: 18%;
-    width: 100px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: #fff;
-    color: #fff;
-    .blnc {
-      position: relative;
-      color: black;
-      text-align: center;
-      margin-top: 5px;
-    }
-    .cash {
-      position: relative;
+  
+  .userDataStor{
+    position: relative;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 270px;
+    width: 100%;
+    padding-bottom: 20px;
+    .DataDiv {
+      position: center;
+      width: 30%;
+      margin: 3%;
+      padding: 5px 5px 5px 5px;
+      box-shadow: 0px 0px 5px 0px #380080;
+      border-radius: 10px 0px 10px 0px;
+      background-color: #fff;
       color: #fff;
-      background-color: darkblue;
-      align-items: center;
-      left: 10px;
-      margin-top: -10px;
-      border: 1px solid red;
-      border-radius: 10px;
-      width: 80px;
-      height: 25px;
-      p {
+      .Name {
+        position: relative;
+        color: black;
         text-align: center;
-        margin-top: 3px;
+        margin-top: 5px;
+        font-size: 12px;
       }
-    }
-  }
-
-  .user-cashout {
-   position: absolute;
-    left: 65%;
-    top: 18%;
-    width: 100px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: #fff;
-    color: #fff;
-    .blnc {
-      position: relative;
-      color: black;
-      text-align: center;
-      margin-top: 5px;
-    }
-    .cash {
-      position: relative;
-      color: #fff;
-      background-color: darkblue;
-      align-items: center;
-      left: 10px;
-      margin-top: -10px;
-      border: 1px solid red;
-      border-radius: 10px;
-      width: 80px;
-      height: 25px;
-      p {
-        text-align: center;
-        margin-top: 3px;
+      .Data {
+        position: relative;
+        color: #fff;
+        background-color: darkblue;
+        align-items: center;nn
+        margin-top: -10px;
+        margin-left: 4%;
+        border: 1px solid red;
+        border-radius: 10px;
+        width: 90%;
+        
+        p {
+          text-align: center;
+          margin-top: px;
+        }
       }
     }
   }
