@@ -3,7 +3,7 @@ async function login() {
             const password = document.getElementById('password').value;
             const errorMsg = document.getElementById("error-msg");
 
-            const response = await fetch('https://script.google.com/macros/s/AKfycbyfr5fEymzVMkTSSuIH0-QvLovI9xwcrmNLbQCZt3wm4TXPkbHNiILmYTF5AavgQc1GOQ/exec');
+            const response = await fetch('https://script.google.com/macros/s/AKfycbxHYgIOE1ar91mpon7gpeeeV6DYoL4aLLfMW8Z1pGl5-mngImQDVjazWwDdbzDlUvuknA/exec');
             const users = await response.json();
 
             const user = users.find(u => u.email === email && u.password === password);
